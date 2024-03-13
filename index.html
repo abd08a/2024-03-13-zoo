@@ -10,17 +10,20 @@
     <div id="forms-container" class="forms-container">
       <div id="employee-creation-form" class="employee-creation-form">
         <p>Employee creation form</p>
-        <input type="text" placeholder="is employee at zoo" />
+        <div class="checkbox-part">
+          <input id="is-employee-at-zoo-input" type="checkbox" />
+          <label for="is-employee-at-zoo-input">Is employee at zoo? </label>
+        </div>
         <input type="text" placeholder="safety training completion date" />
-        <button>Create</button>
-        <button>All Employees</button>
+        <button id="create-employee-btn">Create</button>
+        <button id="all-employees-btn">All Employees</button>
       </div>
       <div id="animal-creation-form" class="animal-creation-form">
         <p>Animal creation form</p>
         <input type="text" placeholder="name" />
         <input type="text" placeholder="age" />
-        <button>Create</button>
-        <button>All Animals</button>
+        <button id="create-animal-btn">Create</button>
+        <button id="all-animals-btn">All Animals</button>
       </div>
     </div>
     <script type="module" src="/src/zoo.ts"></script>

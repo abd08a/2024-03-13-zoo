@@ -113,3 +113,8 @@ button:focus-visible {
 button {
   margin-bottom: 6px;
 }
+
+.checkbox-part {
+  display: flex;
+  flex-direction: row-reverse;
+}

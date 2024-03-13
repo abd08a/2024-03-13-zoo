@@ -1,6 +1,6 @@
 import { Employee } from "../Employee/Employee.ts";
 
-class Employees {
+export class Employees {
   private employees: Employee[];
 
   constructor() {

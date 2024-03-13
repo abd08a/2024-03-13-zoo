@@ -94,3 +94,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.forms-container {
+  column-gap: 50px;
+}
+
+.employee-creation-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.animal-creation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-bottom: 6px;
+}

@@ -2,7 +2,7 @@ export abstract class Employee {
   isEmployeeAtZoo: boolean;
   safetyTrainingCompletionDate: Date;
 
-  constructor({ isEmployeeAtZoo, safetyTrainingCompletionDate }: Employee) {
+  constructor(isEmployeeAtZoo: boolean, safetyTrainingCompletionDate: Date) {
     this.isEmployeeAtZoo = isEmployeeAtZoo;
     this.safetyTrainingCompletionDate = safetyTrainingCompletionDate;
   }

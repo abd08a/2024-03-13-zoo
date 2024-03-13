@@ -2,15 +2,7 @@ import "./style.css";
 import { Elephant } from "./Animal/Elephant.ts";
 import { Tiger } from "./Animal/Tiger.ts";
 import { Zebra } from "./Animal/Zebra.ts";
-import { AnimalType } from "./Animal/animal.types.ts";
-
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-       <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`;
+import { ZooKeeper } from "./Employee/ZooKeeper.ts";
 
 const elephant = new Elephant({ name: "Joe", age: 5, weight: 2000 });
 
@@ -37,3 +29,13 @@ console.log(tiger);
 
 tiger.hunt();
 tiger.makeSound();
+
+const zooKeeper = new ZooKeeper(true, new Date());
+
+console.log(zooKeeper);
+
+zooKeeper.enterZoo();
+
+zooKeeper.feedAnimal(tiger);
+
+zooKeeper.feedAnimal(elephant);

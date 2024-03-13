@@ -1,7 +1,7 @@
 import { Employee } from "./Employee.ts";
 import { Animal } from "../Animal/Animal.ts";
 
-class ZooKeeper extends Employee {
+export class ZooKeeper extends Employee {
   constructor(isEmployeeAtZoo: boolean, safetyTrainingCompletionDate: Date) {
     super(isEmployeeAtZoo, safetyTrainingCompletionDate);
   }

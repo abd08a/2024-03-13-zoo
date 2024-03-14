@@ -25,14 +25,31 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #345e41;
+}
+
+.giraffee-svg {
+  width: 120px;
+  height: 150px;
+  color: rgb(196, 196, 20);
+}
+
+.lion-cage {
+  width: 80%;
+  padding: 0;
+}
+
+.welcome-and-img {
+  display: flex;
 }
 
 #app {
@@ -96,13 +113,14 @@ button:focus-visible {
 }
 
 .forms-container {
-  column-gap: 50px;
+  column-gap: 100px;
+  margin: auto;
+  display: flex;
 }
 
 .employee-creation-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 
 .animal-creation-form {
@@ -111,7 +129,7 @@ button:focus-visible {
 }
 
 button {
-  margin-bottom: 6px;
+  margin-top: 6px;
 }
 
 .checkbox-part {

@@ -11,7 +11,7 @@ const createEmployeeBtn = document.getElementById(
 
 const isEmployeeAtZooInput = document.getElementById(
   "is-employee-at-zoo-input"
-);
+) as HTMLInputElement;
 
 const employees = new Employees();
 
@@ -52,7 +52,8 @@ zooKeeper.feedAnimal(tiger);
 zooKeeper.feedAnimal(elephant);
 
 createEmployeeBtn.addEventListener("click", () => {
-  const zooKeeper = new ZooKeeper(true, new Date());
+  const isEmployeeAtZoo = isEmployeeAtZooInput.checked;
+  const zooKeeper = new ZooKeeper(isEmployeeAtZoo, new Date());
   employees.addEmployee(zooKeeper);
 
   console.log(employees);

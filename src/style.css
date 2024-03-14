@@ -44,7 +44,7 @@ h1 {
 }
 
 .lion-cage {
-  width: 80%;
+  width: 65%;
   padding: 0;
 }
 
@@ -83,7 +83,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.3em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -135,4 +135,25 @@ button {
 .checkbox-part {
   display: flex;
   flex-direction: row-reverse;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.employees-animals-container {
+  display: flex;
+  column-gap: 100px;
+}
+
+.employees-wrapper {
+  border: 2px solid black;
+}
+
+.animals-wrapper {
+  border: 2px solid black;
 }

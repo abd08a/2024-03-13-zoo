@@ -4,14 +4,11 @@ import { Tiger } from "./Animal/Tiger.ts";
 import { Zebra } from "./Animal/Zebra.ts";
 import { Employees } from "./Zoo/Employees.ts";
 import { ZooKeeper } from "./Employee/ZooKeeper.ts";
+import { Employee } from "./Employee/Employee.ts";
 
 const createEmployeeBtn = document.getElementById(
   "create-employee-btn"
 ) as HTMLButtonElement;
-
-const isEmployeeAtZooInput = document.getElementById(
-  "is-employee-at-zoo-input"
-) as HTMLInputElement;
 
 const employees = new Employees();
 
@@ -58,3 +55,48 @@ createEmployeeBtn.addEventListener("click", () => {
 
   console.log(employees);
 });
+
+//===================================================
+
+// const employeesWrapper = document.getElementById(
+//   "employees-wrapper"
+// ) as HTMLDivElement;
+
+// const animalsWrapper = document.getElementById(
+//   "animals-wrapper"
+// ) as HTMLDivElement;
+
+// const createEmployeeBtn = document.getElementById(
+//   "create-employee-btn"
+// ) as HTMLButtonElement;
+
+// const isEmployeeAtZoo = document.getElementById(
+//   "is-employee-at-zoo-input"
+// ) as HTMLInputElement;
+
+// const safetyTrainingCompletionDate = document.getElementById(
+//   "safety-date"
+// ) as HTMLInputElement;
+
+// const addEmployeesToScreen = (employees: Employees[]) => {
+//   employees.forEach((employee) => {
+//     const employeeWrapper = document.createElement("div");
+//     employeeWrapper.classList.add("employee-wrapper");
+
+//     const isEmployeeAtZoo = document.createElement("h2");
+//     const safetyTrainingCompletionDate = document.createElement("h2");
+
+//     isEmployeeAtZoo.textContent = employee.addEmployee.toString();
+//     safetyTrainingCompletionDate.textContent = employee.addEmployee.toString();
+
+//     employeeWrapper.append(isEmployeeAtZoo, safetyTrainingCompletionDate);
+//     employeesWrapper.append(employeeWrapper);
+//   });
+// };
+
+// createEmployeeBtn.addEventListener("click", () => {
+//   const employee = new ZooKeeper({
+//     isEmployeeAtZoo: isEmployeeAtZoo.value,
+//     safetyTrainingCompletionDate: safetyTrainingCompletionDate.value,
+//   });
+// });
